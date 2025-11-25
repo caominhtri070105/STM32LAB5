@@ -11,3 +11,5 @@
 
 
 #endif /* INC_COMMAND_PARSER_H_ */
+
+void
