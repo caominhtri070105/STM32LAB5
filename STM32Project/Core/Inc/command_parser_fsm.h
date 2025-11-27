@@ -8,8 +8,10 @@
 #ifndef INC_COMMAND_PARSER_H_
 #define INC_COMMAND_PARSER_H_
 
+#include "main.h"
 
+void command_parser_fsm();
+void HAL_UART_RxCpltCallback();
 
 #endif /* INC_COMMAND_PARSER_H_ */
 
-void
