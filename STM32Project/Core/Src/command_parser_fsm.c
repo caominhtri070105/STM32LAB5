@@ -6,7 +6,6 @@
  */
 
 #include "command_parser_fsm.h"
-
 void command_parser_fsm(char *command){
 	if (strstr(command, "!RST#")!=NULL){
 		HAL_ADC_Start(&hadc1);

@@ -10,6 +10,7 @@
 
 #include "main.h"
 #include "stdint.h"
+#include "uart.h"
 
 #define MAX_BUFFER_SIZE 30
 #define TIMEOUT_MS      3000
@@ -29,4 +30,9 @@ extern uint8_t command_index;
 
 extern uint8_t uart_command_flag;
 extern uint8_t uart_rx_buffer;
+
+extern int uartState;
+
+
+
 #endif /* INC_GLOBAL_H_ */

@@ -12,7 +12,6 @@ void uart_communication_fsm(){
 	switch(uartState){
 	case UART_IDLE:
 		break;
-	}
 	case UART_WAIT_OK:
 		if (HAL_GetTick()-last_send_time > TIMEOUT_MS){
 			uartState=UART_RESEND;
@@ -25,4 +24,5 @@ void uart_communication_fsm(){
 	default:
 		uartState=UART_IDLE;
 		break;
+	}
 }

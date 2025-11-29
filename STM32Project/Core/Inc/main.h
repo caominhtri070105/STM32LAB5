@@ -62,7 +62,8 @@ void Error_Handler(void);
 #define TIM3_CH1_Pin GPIO_PIN_6
 #define TIM3_CH1_GPIO_Port GPIOA
 /* USER CODE BEGIN Private defines */
-
+extern ADC_HandleTypeDef hadc1;
+extern UART_HandleTypeDef huart2;
 /* USER CODE END Private defines */
 
 #ifdef __cplusplus

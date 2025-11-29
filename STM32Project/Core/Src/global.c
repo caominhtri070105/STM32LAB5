@@ -17,3 +17,5 @@ uint8_t command_index = 0;
 
 uint8_t uart_command_flag = 0;
 uint8_t uart_rx_buffer;
+
+int uartState = UART_IDLE;

@@ -95,7 +95,7 @@ int main(void)
   MX_ADC1_Init();
   MX_USART2_UART_Init();
 
-  HAL_UART_Receive_IT(&huart2, &temp,1);
+  HAL_UART_Receive_IT(&huart2, &uart_rx_buffer, 1);
 
   /* USER CODE BEGIN 2 */
 
@@ -107,7 +107,7 @@ int main(void)
   {
     /* USER CODE END WHILE */
 	  if (uart_command_flag ==1){
-		  command_parser_fsm();
+		  command_parser_fsm((char *) command_buffer);
 		  uart_command_flag=0;
 	  }
 	  uart_communication_fsm();
