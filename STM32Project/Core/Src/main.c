@@ -19,7 +19,9 @@
 /* USER CODE END Header */
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
-
+#include "command_parser_fsm.h"
+#include "uart_communication.h"
+#include "uart.h"
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 
@@ -101,13 +103,12 @@ int main(void)
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
-  uint32_t ADC_value=0;
   while (1)
   {
     /* USER CODE END WHILE */
-	  if (buffer_flag ==1){
+	  if (uart_command_flag ==1){
 		  command_parser_fsm();
-		  buffer_flag=0;
+		  uart_command_flag=0;
 	  }
 	  uart_communication_fsm();
     /* USER CODE BEGIN 3 */
