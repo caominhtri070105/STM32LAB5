@@ -61,7 +61,6 @@ static void MX_USART2_UART_Init(void);
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
-uint8_t temp = 0;
 /* USER CODE END 0 */
 
 /**
@@ -95,10 +94,9 @@ int main(void)
   MX_ADC1_Init();
   MX_USART2_UART_Init();
 
-  HAL_UART_Receive_IT(&huart2, &uart_rx_buffer, 1);
 
   /* USER CODE BEGIN 2 */
-
+  HAL_UART_Receive_IT(&huart2, &uart_rx_buffer, 1);
   /* USER CODE END 2 */
 
   /* Infinite loop */

@@ -8,6 +8,7 @@
 #include "uart.h"
 void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart){
 	if (huart->Instance == USART2){
+        HAL_UART_Transmit(&huart2, &uart_rx_buffer, 1, 10);
 		if(uart_rx_buffer == '\n' || uart_rx_buffer == '\r'){
 			command_buffer[command_index]= '\0';
 			uart_command_flag=1;

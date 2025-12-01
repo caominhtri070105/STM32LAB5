@@ -10,6 +10,8 @@
 
 #include "global.h"
 #include "main.h"
+#include "string.h"
+
+void HAL_UART_RxCpltCallback();
 
 #endif /* INC_UART_H_ */
-void HAL_UART_RxCpltCallback();
