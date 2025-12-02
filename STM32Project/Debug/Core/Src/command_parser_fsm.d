@@ -24,8 +24,10 @@ Core/Src/command_parser_fsm.o: ../Core/Src/command_parser_fsm.c \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h \
+ ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h \
+ ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h \
- ../Core/Inc/global.h ../Core/Inc/uart.h
+ ../Core/Inc/global.h ../Core/Inc/uart.h ../Core/Inc/software_timer.h
 
 ../Core/Inc/command_parser_fsm.h:
 
@@ -79,8 +81,14 @@ Core/Src/command_parser_fsm.o: ../Core/Src/command_parser_fsm.c \
 
 ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h:
 
+../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h:
+
+../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h:
+
 ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h:
 
 ../Core/Inc/global.h:
 
 ../Core/Inc/uart.h:
+
+../Core/Inc/software_timer.h:

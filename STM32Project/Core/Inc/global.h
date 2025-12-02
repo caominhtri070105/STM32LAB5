@@ -11,6 +11,7 @@
 #include "main.h"
 #include "stdint.h"
 #include "uart.h"
+#include "software_timer.h"
 
 #define MAX_BUFFER_SIZE 30
 #define TIMEOUT_MS      3000
