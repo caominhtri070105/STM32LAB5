@@ -14,7 +14,6 @@
 #include "software_timer.h"
 
 #define MAX_BUFFER_SIZE 30
-#define TIMEOUT_MS      3000
 
 #define UART_IDLE     0
 #define UART_WAIT_OK  1
