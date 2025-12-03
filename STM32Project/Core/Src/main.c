@@ -104,8 +104,13 @@ int main(void)
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
+  setTimer2(250);
   while (1)
   {
+	  if (timer2_flag==1){
+		  HAL_GPIO_TogglePin(LED_RED_GPIO_Port,LED_RED_Pin);
+		  setTimer2(250);
+	  }
 	  if (uart_command_flag==1){
 		  uart_command_flag=0;
 		  command_parser_fsm((char*)command_buffer);
