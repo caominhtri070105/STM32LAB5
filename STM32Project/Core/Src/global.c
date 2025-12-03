@@ -10,7 +10,6 @@
 char uart_buffer[MAX_BUFFER_SIZE];
 char last_packet[MAX_BUFFER_SIZE];
 
-uint32_t last_send_time;
 
 uint8_t command_buffer[MAX_BUFFER_SIZE];
 uint8_t command_index = 0;

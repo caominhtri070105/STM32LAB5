@@ -24,7 +24,6 @@
 extern char uart_buffer[MAX_BUFFER_SIZE];
 extern char last_packet[MAX_BUFFER_SIZE];
 
-extern uint32_t last_send_time;
 
 extern uint8_t command_buffer[MAX_BUFFER_SIZE];
 extern uint8_t command_index;
